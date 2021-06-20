@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Amazing Card Matching Game</title>
+</head>
+<body>
+  <div id="begin"></div>
+    <div class="container">                            <!-- ani container utk semua dalam game ani-->
+        <header class="header">                         <!--header utk game ani yang atas score panel-->
+          <h1>Amazing Card Matching Game</h1>
+          <h2>The Simpsons Edition</h2>
+        </header>      
+        <section class="score-panel">                   <!--anin score panel for this game (timer saja sama ada reset button)-->
+          <div class="timer-container">
+            <span class="timer">Timer: 00:00</span>
+          </div>
+          <div class="reset">
+            <button class="btn reset-btn">Reset</button>
+          </div>
+        </section>
+      <!-- Modal section (this one keluar or pop-up when the game habis)-->
+        <!-- Modal -->
+        <section class="win-game-modal">
+            <div id="modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>        <!--ada close button for pop up window-->
+                <h2>Awww, Yiss!! Hoooorayyy!!</h2>
+                <p>You have won the game and found all 8 pairs of cards.</p>
+                <img class="modal-img" src="img/homerrrr.png" alt="homer simpsons">
+                <button class="btn play-again-btn">Play Again?</button>
+            </div>
+            </div>
+        </section>
+              <ul class="deck"></ul>                      <!--kutak utk game atu-->
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
